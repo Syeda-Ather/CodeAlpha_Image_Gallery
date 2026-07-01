@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 style="color: rgb(139, 94, 117);">Image Gallary</h1>
+
+    <nav class="navbar">
+        <button class="filter-btn" onclick="filterImages('all')">All Images</button>
+        <button class="filter-btn" onclick="filterImages('nature')">Nature</button>
+        <button class="filter-btn" onclick="filterImages('beauty')">Beauty</button>
+        <button class="filter-btn" onclick="filterImages('animals')">Animals</button>
+        <button class="filter-btn" onclick="filterImages('cartoons')">Cartoons</button>
+
+    </nav>
+
+    <div class="gallery" id="gallery">
+        <img src="pics/imgN.jpg" class="item nature" onclick="openLightbox(this)">
+        <img src="pics/img1.jpg" class="item beauty" onclick="openLightbox(this)">
+        <img src="pics/imgC1.jpg" class="item cartoons" onclick="openLightbox(this)">
+        <img src="pics/imgA1.jpg" class="item animals" onclick="openLightbox(this)">
+        <img src="pics/imgN2.jpg" class="item nature" onclick="openLightbox(this)">
+        <img src="pics/imgA4.jpg" class="item animals" onclick="openLightbox(this)">
+        <img src="pics/imgC2.jpg" class="item cartoons" onclick="openLightbox(this)">
+        <img src="pics/img3.jpg" class="item beauty" onclick="openLightbox(this)">
+        <img src="pics/imgA2.jpg" class="item animals" onclick="openLightbox(this)">
+        <img src="pics/img2.jpg" class="item beauty" onclick="openLightbox(this)">
+        <img src="pics/imgA3.jpg" class="item animals" onclick="openLightbox(this)">
+        <img src="pics/imgC3.jpg" class="item cartoons" onclick="openLightbox(this)">
+        <img src="pics/imgN4.jpg" class="item nature" onclick="openLightbox(this)">
+        <img src="pics/imgN3.jpg" class="item nature" onclick="openLightbox(this)">
+        <img src="pics/img5.jpg" class="item beauty" onclick="openLightbox(this)">
+
+
+    </div>
+
+    <!-- Lightbox (Bari image dekhne ke liye) -->
+     <div id="lightbox" class="lightbox" >
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <img id="lightbox-img" src="">
+        <button class="next" onclick="changeImage(1)">&#10095;</button> 
+    </div>
+
+    
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
