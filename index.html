@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Image Gallery</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <h1 style="color: rgb(139, 94, 117);">Image Gallary</h1>
@@ -40,17 +42,36 @@
     </div>
 
     <!-- Lightbox (Bari image dekhne ke liye) -->
-     <div id="lightbox" class="lightbox" >
+    <div id="lightbox" class="lightbox">
         <span class="close" onclick="closeLightbox()">&times;</span>
-        
+
         <button class="prev" onclick="changeImage(-1)">&#10094;</button>
         <img id="lightbox-img" src="">
-        <button class="next" onclick="changeImage(1)">&#10095;</button> 
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
     </div>
 
-    
-   
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <h3 class="footer-title">Image Gallery</h3>
+            <p class="footer-description">
+                A responsive image gallery with category filters,<br>
+                hover effects, and lightbox functionality.
+            </p>
+            <p class="footer-tech">HTML &bull; CSS &bull; JavaScript</p>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-social-links">
+                <a href="https://github.com/Syeda-Ather" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/syeda-ather-fatima-261301250" target="_blank">LinkedIn</a>
+            </div>
+
+            <p class="footer-copyright">&copy; 2026 Syeda Ather. All Rights Reserved.</p>
+    </footer>
+
 
     <script src="script.js"></script>
 </body>
+
 </html>

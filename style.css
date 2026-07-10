@@ -97,6 +97,78 @@ body {
 
 .close:hover, .prev:hover, .next:hover { color: #7a7575; }
 
+/* Footer Styles */
+footer {
+    background-color: #0a0a0a; 
+    padding: 50px 20px 20px;
+    margin-top: 60px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-title {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.footer-description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #a0a0a0;
+    margin-bottom: 15px;
+}
+
+.footer-tech {
+    font-size: 14px;
+    color: rgb(139, 94, 117);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footer-divider {
+    width: 60px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 25px 0 15px;
+    border-radius: 2px;
+}
+
+
+.footer-social-links {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-social-links a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.footer-social-links a:hover {
+    color: #ff66b2; 
+    transform: translateY(-2px);
+}
+
+.footer-copyright {
+    font-size: 13px;
+    color: #666666;
+    letter-spacing: 0.5px;
+}
 
 
  @media(max-width:768px){
